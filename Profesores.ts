@@ -1,31 +1,20 @@
 import { Empleado } from "./Empleados";
 
-// La clase profesor es una subclase de Empleado que hereda los datos de Persona y Empleado
 export class Profesor extends Empleado {
-  private _departamento: string;
+  private departamento: string;
+  constructor(nombre: string,apellido: string,cedula: number,estadoCivil: string,anioIncorporacion: number,despacho: number,departamento: string
+  ) {super(nombre, apellido, cedula, estadoCivil, anioIncorporacion, despacho);
+    this.departamento = departamento;}
 
-  constructor(
-    nombre: string,
-    apellido: string,
-    ci: number,
-    estadoCivil: string,
-    anioIncorporacion: number,
-    despacho: number,
-    departamento: string
-  ) {
-    super(nombre, apellido, ci, estadoCivil, anioIncorporacion, despacho);
-    this._departamento = departamento;
-  }
-
-  public get departamento(): string {
+  public get _departamento(): string {
     return this._departamento;
   }
 
-  public cambiarDepartamento(departamento: string) {
-    this._departamento = departamento;
+  public cambiarDepar(departamento: string) {
+    this.departamento = departamento;
   }
 
-  toString(): string {
-    return `El profesor ${this.nombre} ${this.apellido} de cédula ${this.ci} está en el departamento de ${this.departamento}`;
+  mostrar(): string {
+    return `El profesor está en el departamento de ${this.departamento}`;
   }
 }
