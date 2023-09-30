@@ -1,39 +1,37 @@
-// Esta clase es la clase madre para el programa.
-// La clase persona, provee de diferentes datos que son importantes cuando hablamos de una persona.
 export class Persona {
-    private _nombre: string;
-    private _apellido: string;
-    private _ci: number;
-    private _estadoCivil: string;
+    private nombre: string;
+    private apellido: string;
+    private cedula: number;
+    private estadoCivil: string;
   
-    constructor(nombre: string, apellido: string, ci: number, estadoCivil: string) {
-      this._nombre = nombre;
-      this._apellido = apellido;
-      this._ci = ci;
-      this._estadoCivil = estadoCivil;
+    constructor(nombre: string, apellido: string, cedula: number, estadoCivil: string) {
+      this.nombre = nombre;
+      this.apellido = apellido;
+      this.cedula = cedula;
+      this.estadoCivil = estadoCivil;
     }
   
-    public get nombre(): string {
+    public get _nombre(): string {
       return this._nombre;
     }
   
-    public get apellido(): string {
+    public get _apellido(): string {
       return this._apellido;
     }
-    public get ci(): number {
-      return this._ci;
+    public get _cedula(): number {
+      return this._cedula;
     }
   
-    public get estadoCivil(): string {
+    public get _estadoCivil(): string {
       return this._estadoCivil;
     }
   
     public cambiarEstadoCivil(estado: string) {
-      this._estadoCivil = estado;
+      this.estadoCivil = estado;
     }
   
   
-    toString() {
-      return `El estado civil del ciudadano ${this.nombre} ${this.apellido} de cédula ${this.ci} es: ${this.estadoCivil}`;
+    mostrar() {
+      return `El estado civil del ciudadano es: ${this.estadoCivil}`;
     }
   }
