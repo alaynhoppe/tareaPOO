@@ -1,11 +1,11 @@
 import { Persona } from "./Personas";
 export class Empleado extends Persona {
-  private Incorporacion: number;
+  private _Incorporacion: number;
   private despacho: number;
 
   constructor(nombre: string, apellido: string, ci: number, estadoCivil: string, Incorporacion: number, despacho: number) {
     super(nombre, apellido, ci, estadoCivil);
-    this.Incorporacion = Incorporacion;
+    this._Incorporacion = Incorporacion;
     this.despacho = despacho;
   }
   public get _despacho(): number {
@@ -15,7 +15,7 @@ export class Empleado extends Persona {
   public changdespacho(despacho: number) {
     this.despacho = despacho;
   }
-  public get _Incorporacion(): number {
+  public get Incorporacion(): number {
     return this._Incorporacion;
   }
   mostrar(): string {
