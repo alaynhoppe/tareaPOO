@@ -4,37 +4,39 @@ import { Persona } from "./Personas";
 import { PersonalDeServicio } from "./Personalservicio";
 import { Profesor } from "./Profesores";
 
-const persona = new Persona("Juan", "Perez", 123456789, "soltero");
-const estudiante = new Estudiante("Juan", "Perez", 123456789, "soltero","PRIMERO");
-const empleado = new Empleado("Juan", "Perez", 123456789, "soltero", 2000, 5);
-const profesor = new Profesor("Juan", "Perez", 123456789, "soltero", 2000, 5, "Informatica");
-const personalDeServicio = new PersonalDeServicio("Juan", "Perez", 123456789, "soltero", 2000, 5, "Bibliotecas");
+const Personita = new Persona("Alayn", "Hoppe",2003-3, "soltero");
+const alumno = new Estudiante("Alayn","Hoppe",2003_3,"soltero","Segundo");
+const chamo = new Empleado("Alayn", "Hoppe", 2003-3, "soltero", 2000, 5);
+const profe = new Profesor("Alayn", "Hoppe", 2003-3, "soltero", 2000, 5, "Informatica");
+const tercermundo = new PersonalDeServicio("Alayn", "Hoppe",2003-3, "soltero", 2000, 5, "Bibliotecas");
 
-console.log(persona.toString());
-persona.cambiarEstadoCivil("casado")
-console.log(persona.toString());
-persona.cambiarEstadoCivil("divorciado")
-console.log(persona.toString());
-persona.cambiarEstadoCivil("casado")
-console.log(persona.toString());
-persona.cambiarEstadoCivil("viudo")
-console.log(persona.toString());
-persona.cambiarEstadoCivil("unión libre")
-console.log(persona.toString());
+console.log(Personita.toString());
+Personita.cambiarEstadoCivil("divorciado");
+console.log(Personita.toString());
+Personita.cambiarEstadoCivil("Viudo");
+console.log(Personita.toString());
 
-estudiante.matricular("3er")
-console.log(estudiante.toString());
-estudiante.matricular("4to")
-console.log(estudiante.toString());
+console.log(alumno.mostrar());
+alumno.matricula("primero");
+console.log(alumno.toString());
+alumno.matricula("sexto");
+console.log(alumno.toString());
 
-console.log(empleado.toString());
-empleado.cambiarDespacho(10);
-console.log(empleado.toString());
+console.log(chamo.toString());
+chamo.changdespacho(2);
+console.log(chamo.toString());
+chamo.changdespacho(55);
+console.log(chamo.toString());
 
-console.log(profesor.toString());
-profesor.cambiarDepartamento("Literatura")
-console.log(profesor.toString());
 
-console.log(personalDeServicio.toString());
-personalDeServicio.cambiarSeccion("Sala de Computo")
-console.log(personalDeServicio.toString());
+console.log(profe.toString());
+profe.cambiarDepar("Literatura");
+console.log(profe.toString());
+profe.cambiarDepar("Math");
+console.log(profe.toString());
+
+console.log(tercermundo.toString());
+tercermundo.cambiarSeccion("Sala de Computo");
+console.log(tercermundo.toString());
+tercermundo.cambiarSeccion("Patio");
+console.log(tercermundo.toString());
