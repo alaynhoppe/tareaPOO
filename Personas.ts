@@ -1,24 +1,24 @@
 export class Persona {
-    private nombre: string;
-    private apellido: string;
-    private cedula: number;
+    private _nombre: string;
+    private _apellido: string;
+    private _cedula: number;
     private estadoCivil: string;
   
     constructor(nombre: string, apellido: string, cedula: number, estadoCivil: string) {
-      this.nombre = nombre;
-      this.apellido = apellido;
-      this.cedula = cedula;
+      this._nombre = nombre;
+      this._apellido = apellido;
+      this._cedula = cedula;
       this.estadoCivil = estadoCivil;
     }
   
-    public get _nombre(): string {
+    public get nombre(): string {
       return this._nombre;
     }
   
-    public get _apellido(): string {
+    public get apellido(): string {
       return this._apellido;
     }
-    public get _cedula(): number {
+    public get cedula(): number {
       return this._cedula;
     }
   
