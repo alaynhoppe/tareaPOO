@@ -10,33 +10,33 @@ const chamo = new Empleado("Alayn", "Hoppe", 2003-3, "soltero", 2000, 5);
 const profe = new Profesor("Alayn", "Hoppe", 2003-3, "soltero", 2000, 5, "Informatica");
 const tercermundo = new PersonalDeServicio("Alayn", "Hoppe",2003-3, "soltero", 2000, 5, "Bibliotecas");
 
-console.log(Personita.toString());
+console.log(Personita.mostrar());
 Personita.cambiarEstadoCivil("divorciado");
-console.log(Personita.toString());
+console.log(Personita.mostrar());
 Personita.cambiarEstadoCivil("Viudo");
-console.log(Personita.toString());
+console.log(Personita.mostrar());
 
 console.log(alumno.mostrar());
 alumno.matricula("primero");
-console.log(alumno.toString());
+console.log(alumno.mostrar());
 alumno.matricula("sexto");
-console.log(alumno.toString());
+console.log(alumno.mostrar());
 
-console.log(chamo.toString());
+console.log(chamo.mostrar());
 chamo.changdespacho(2);
-console.log(chamo.toString());
+console.log(chamo.mostrar());
 chamo.changdespacho(55);
-console.log(chamo.toString());
+console.log(chamo.mostrar());
 
 
-console.log(profe.toString());
+console.log(profe.mostrar());
 profe.cambiarDepar("Literatura");
-console.log(profe.toString());
+console.log(profe.mostrar());
 profe.cambiarDepar("Math");
-console.log(profe.toString());
+console.log(profe.mostrar());
 
-console.log(tercermundo.toString());
+console.log(tercermundo.mostrar());
 tercermundo.cambiarSeccion("Sala de Computo");
-console.log(tercermundo.toString());
+console.log(tercermundo.mostrar());
 tercermundo.cambiarSeccion("Patio");
-console.log(tercermundo.toString());
+console.log(tercermundo.mostrar());
